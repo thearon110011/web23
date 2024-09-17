@@ -1,0 +1,46 @@
+.contenedor{
+    background-color: #000000;
+
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+    /*grid-row: ; para casjas hijo*/
+    /* grid-template-columns: 25% 25% 50% ; /*para cajas padre*/
+    grid-gap: 5px;/* da espacio a los conrenedores*/
+    /* grid-template-rows: 150px 250px 100px 50px 20px;/*le aumenta*/
+    grid-template-columns: 1fr 1fr 1fr;/*ya no se utilliza pixeles ni porsentaej*/
+    /*grid-template-rows: 200px 1fr 6fr 1fr;*/
+   /* grid-template-columns: repeat(8, 1fr);/*repite las columas */
+    /*grid-template-rows: repeat(3,200px);/*lo mmismo*/
+    grid-template-columns: minmax(50px,180px)2fr 1fr; /*adapte para los dmeas disoocitivos*/
+    grid-template-rows: 2fr 8fr 2fr ;/*le da la largura*/
+
+}
+.contenedor>div{
+    background-color: rgb(126, 128, 126);
+    /*border-radius: 50% 50px;*/
+    /*margin: 10px 10px 10px 10px;*/
+}
+.contenedor .elelmento1{
+    background-color: rgb(18, 164, 167);
+    grid-column: 1/4;
+}
+.contenedor .elelmento2{
+    background-color:rgb(82, 197, 197) ;
+    grid-column: 1/1;
+}
+.contenedor .elelmento3{
+    background-color: rgb(82, 197, 197);
+    grid-column: 2/3;
+}
+.contenedor .elelmento4{
+    grid-column: 3/4;
+    background-color: rgb(82, 197, 197);
+}
+.contenedor .elelmento5{
+    grid-column: 1/4;
+    background-color: rgb(82, 197, 197);
+
+}
